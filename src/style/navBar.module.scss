@@ -159,3 +159,13 @@
         justify-content: center;
     }
 }
+@media only screen and (max-width: 739px) {
+    .Container_Main_Navbar-menu,
+    .Container_Main_Navbar-About {
+        display: none;
+    }
+    .Container_Navbar {
+        width: 326px;
+    }
+}
+

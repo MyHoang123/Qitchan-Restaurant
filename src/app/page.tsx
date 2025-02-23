@@ -16,6 +16,7 @@ export default function Home() {
           <p>SUSHI</p>
           <p>SENSATION</p>
         </div>
+        <div className={cx('Container__Main-box')}></div>
       </div>
       <Link href={'/menu'} className={cx('Container__Menu')}>
         <div className={cx('Container__Menu_button')}>

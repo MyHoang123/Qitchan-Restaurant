@@ -30,7 +30,9 @@
     font-family: 'MyCustomFont';
     src: url('../../public/Forum/Forum-Regular.ttf');
 }
-
+.Container__Main {
+    position: relative;
+}
 @media only screen and (min-width: 740px) and (max-width: 1299px) {
     .Container {
         width: 100%;
@@ -67,9 +69,9 @@
         left: 3%;
         width: 90%;
         text-align: center;
-
+        z-index: 2;
         p {
-            font-family: "Forum", sans-serif;
+            font-family: "MyCustomFont";
             font-size: 100px;
             color: #EFE7D2;
             font-weight: 100;
@@ -105,15 +107,16 @@
     .Container_Main_Description {
         position: absolute;
         bottom: 10%;
-        left: 3%;
+        left: 4%;
         width: 90%;
         text-align: left;
-
+        z-index: 2;
         p {
-            font-family: "Forum", sans-serif;
+            font-family: "MyCustomFont";
             font-size: 100px;
             color: #EFE7D2;
             font-weight: 100;
+            letter-spacing: 1px;
         }
     }
 }
@@ -269,15 +272,16 @@
     .Container_Main_Description {
         position: absolute;
         bottom: 10%;
-        left: 3%;
+        left: 4%;
         width: 90%;
         text-align: center;
-
+        z-index: 2;
         p {
-            font-family: "Forum", sans-serif;
-            font-size: 100px;
+            font-family: "MyCustomFont";
+            font-size: 70px;
             color: #EFE7D2;
             font-weight: 100;
+            letter-spacing: 1px;
         }
     }
 
@@ -285,9 +289,23 @@
     .Container__RESERVATION,
     .Container__Ourestaurant {
         height: 60vh;
+
     }
 
     .Container_footer {
         display: flex;
     }
+}
+.Container__Menu,
+.Container__RESERVATION,
+.Container__Ourestaurant {
+    border-radius: 2em;
+}
+.Container__Main-box {
+        height: 190px;
+        width: 100%;
+        position: absolute;
+        z-index: 0;
+        bottom: 0;
+        background: linear-gradient(to top, #000000b3, #0000);
 }

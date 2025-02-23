@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import Icon from '../../../public/Icon.svg'
-import MenuImg from '../../../public/ImgMenu.png'
 import Product1 from '../../../public/ImageProduct1.png'
 import Product2 from '../../../public/ImageProduct2png.png'
 import Product3 from '../../../public/ImageProduct3.png'
@@ -25,10 +24,11 @@ function MenuPPage() {
         <div className={cx('Container')}>
             <div className={cx('Container_img_contain')}>
                 <div className={cx('Container_img')}>
-                    <Image alt='Img not author' src={MenuImg} />
+                    <img alt='Img not author' src='/ImgMenu.png' />
                     <div className={cx('Container_img-title')}>
                         <span className={cx('Container_img_title')}>MENU</span>
                     </div>
+                    <div className={cx('Container_img-box')}></div>
                 </div>
             </div>
             <div className={cx('Container_menu_containt')}>

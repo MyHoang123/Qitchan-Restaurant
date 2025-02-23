@@ -14,6 +14,7 @@ function AboutPage() {
                 <div className={cx('Container_main-title')}>
                     <p className={cx('Container_main_Title')}>About</p>
                 </div>
+                <div className={cx('Container_main-box')}></div>
             </div>
             <div className={cx('Container_info')}>
                 <div className={cx('Container_info-header')}>

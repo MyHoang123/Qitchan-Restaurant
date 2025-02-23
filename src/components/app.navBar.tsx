@@ -45,8 +45,8 @@ function Navbar() {
                             <Image src={Logo} alt="Picture of the author" />
                         </Link>
                     </div>
-                    <Link href={'/menu'} className={cx('Container_Main_Navbar-menu')}>Menu</Link>
-                    <Link href={'/about'} className={cx('Container_Main_Navbar-About')}>About</Link>
+                    <Link href={'/menu'} className={cx('Container_Main_Navbar-menu')}>MENU</Link>
+                    <Link href={'/about'} className={cx('Container_Main_Navbar-About')}>ABOUT</Link>
                     <Link href={'/booking'} className={cx('Container_Main_Navbar-book')}>BOOK A TABLE</Link>
                 </div>
             </nav>

@@ -139,17 +139,19 @@
 
 .Container_main-title {
     position: absolute;
+    z-index: 3;
     width: 100%;
     bottom: 6%;
     padding-left: 5%;
 }
 
 .Container_main_Title {
-    font-size: 14em;
-    color: #EFE7D2;
+    font-size: 18em;
+    color: #efe7d2;
     font-weight: 200;
     text-transform: uppercase;
     left: 6%;
+    font-family: 'MyCustomFont';
 }
 
 .over_lay {
@@ -287,4 +289,12 @@
     .Container_info-footer,.Container_info-header {
         display: block;
     }
+}
+.Container_main-box {
+    height: 190px;
+    width: 100%;
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+    background: linear-gradient(to top, #000000b3, #0000);
 }

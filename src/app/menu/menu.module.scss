@@ -1,18 +1,19 @@
-
 @keyframes loadPage {
     from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
     }
 }
+
 @font-face {
     font-family: 'MyCustomFont';
     src: url('../../../public/Forum/Forum-Regular.ttf');
-  }
-  
-@media only screen and (min-width: 1300px){
+}
+
+@media only screen and (min-width: 1300px) {
     .Container {
         width: 100%;
         display: grid;
@@ -29,19 +30,27 @@
         overflow-y: scroll;
         animation: loadPage 1s ease-in-out alternate;
     }
+
     .Containert::-webkit-scrollbar {
-        width: 6px; /* Chiều rộng của thanh cuộn dọc */
-        height: 6px; /* Chiều cao của thanh cuộn ngang */
-      }
+        width: 6px;
+        /* Chiều rộng của thanh cuộn dọc */
+        height: 6px;
+        /* Chiều cao của thanh cuộn ngang */
+    }
+
     .Containert::-webkit-scrollbar-thumb {
-        background-color: #373737; /* Màu của phần tay cầm thanh cuộn */
-        border-radius: 10px; /* Bo tròn các góc của thanh cuộn */
-      }
+        background-color: #373737;
+        /* Màu của phần tay cầm thanh cuộn */
+        border-radius: 10px;
+        /* Bo tròn các góc của thanh cuộn */
+    }
+
     .Container_img_contain {
         width: 50%;
         z-index: 100;
         padding: 3em;
     }
+
     .Container_img {
         width: 50%;
         height: 100%;
@@ -49,67 +58,78 @@
         position: fixed;
         top: 0;
         left: 0;
+
         img {
             width: 100%;
             height: 100%;
             object-fit: cover;
         }
     }
+
     .Container_menu {
         border: 1px solid #EFE7D2;
         border-radius: 16px;
         padding: 32px 96px;
         height: 100%;
     }
-  }
-@media only screen and (min-width: 740px) and (max-width: 1299px) {
-  .Container {
-    width: 100%;
-    display: grid;
-    position: fixed;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    padding: 3em;
-    column-gap: 2em;
-    height: 100vh;
-    row-gap: 1em;
-    background-image: url('../../../public/BackgroundMenu.png');
-    background-color: #0A0B0A;
-    background-repeat: no-repeat;
-    overflow-y: scroll;
-  }
-  .Container_img_contain {
-    width: 100%;
-    z-index: 100;
-    position: relative;
 }
-.Container_img {
-    width: 100%;
-    img {
+
+@media only screen and (min-width: 740px) and (max-width: 1299px) {
+    .Container {
         width: 100%;
-        object-fit: cover;
+        display: grid;
+        position: fixed;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        padding: 3em;
+        column-gap: 2em;
+        height: 100vh;
+        row-gap: 1em;
+        background-image: url('../../../public/BackgroundMenu.png');
+        background-color: #0A0B0A;
+        background-repeat: no-repeat;
+        overflow-y: scroll;
+    }
+
+    .Container_img_contain {
+        width: 100%;
+        z-index: 100;
+        position: relative;
+    }
+
+    .Container_img {
+        width: 100%;
+
+        img {
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .Container_img-title {
+        text-align: center;
+        padding-left: 0;
     }
 }
-.Container_img-title {
-    text-align: center;
-    padding-left: 0;
-}
-}
+
 .Container_menu {
     border: 1px solid #EFE7D2;
     border-radius: 16px;
     padding: 32px 126px;
     height: 100%;
 }
+
 .Container_menu {
     border: 1px solid #EFE7D2;
     border-radius: 16px;
     padding: 32px 96px;
     height: 100%;
 }
+
 .Container_menu_list {
     width: 100%;
     text-align: center;
+
     button {
         padding: 14px 30px;
         background-color: transparent;
@@ -117,15 +137,18 @@
         border: 1px solid #EFE7D2;
         border-radius: 8px;
     }
+
     button:nth-child(2) {
         margin: 0 10px;
     }
 }
+
 .Container_menu_icon {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 64px 0 38px 0;
+
     span {
         font-family: MyCustomFont;
         color: #EFE7D2;
@@ -133,17 +156,21 @@
         font-size: 3em;
     }
 }
+
 .Container_menu_product {
     display: flex;
 }
+
 .Container_menu_product-img {
     width: 150px;
+
     img {
         width: 150px;
         height: 90%;
         object-fit: cover;
     }
 }
+
 .Container_menu_product-title {
     flex-grow: 1;
     padding: 10px;
@@ -154,54 +181,66 @@
     justify-content: space-around;
     flex-direction: column;
 }
+
 .Container_menu_product-title--name {
     display: flex;
     justify-content: space-between;
+
     p {
         font-size: 3em;
     }
+
     span {
         font-size: 3em;
     }
 }
+
 .Container_menu_product-title--name_line {
     flex-grow: 1;
     margin: 5px 10px;
     border-bottom: 1px dotted #EFE7D2;
 }
+
 .Container_menu_product-title--dscrip {
     font-size: 12px;
     color: #8d8d8d;
     line-height: 24px;
     letter-spacing: .4px;
 }
+
 .Container_img-title {
     position: absolute;
     width: 100%;
     bottom: 50px;
     padding-left: 5%;
+    z-index: 3;
 }
+
 .Container_img_title {
     color: #EFE7D2;
     font-size: 112px;
+    font-family: 'MyCustomFont';
 }
+
 .Continer_menu-footer {
     height: 80px;
     margin-top: 20px;
     margin-bottom: 10px;
     padding-bottom: 1em;
 }
+
 .Container_menu-footer--containt {
     height: 80%;
     border: 1px solid #EFE7D2;
     color: #EFE7D2;
-    border-radius: 16px ;
+    border-radius: 16px;
     font-size: 2em;
     display: flex;
     padding: 0 30%;
     align-items: center;
     justify-content: space-between;
 }
+
 @media only screen and (max-width: 739px) {
     .Container {
         width: 100%;
@@ -217,39 +256,63 @@
         background-color: #0A0B0A;
         background-repeat: no-repeat;
         overflow-y: scroll;
-      }
-      .Container_img_contain {
+    }
+
+    .Container_img_contain {
         width: 100%;
         z-index: 100;
         position: relative;
     }
+
     .Container_img {
         width: 100%;
+
         img {
+            height: 100vh;
             width: 100%;
             object-fit: cover;
         }
     }
+
     .Container_img-title {
         text-align: center;
-        padding-left: 0;
     }
+
     .Container_menu_product {
         flex-direction: column;
         width: 100%;
     }
+
     .Container_menu_product-img {
         width: 100%;
+
         img {
             width: 100%;
             height: 90%;
             object-fit: cover;
         }
     }
+
     .Container_menu {
         padding: 22px 44px;
     }
+
     .Container_menu-footer--containt {
         padding: 0 10%;
     }
+
+    .Container_menu_list {
+        button {
+            padding: 14px 20px;
+        }
+    }
+}
+
+.Container_img-box {
+    height: 190px;
+    width: 100%;
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+    background: linear-gradient(to top, #000000b3, #0000);
 }
