@@ -7,10 +7,12 @@ const cx = classNames.bind(style)
 export default function App() {
     return (
         <Swiper
+        
         autoplay={{
-            delay: 2000,
+            delay: 2500,
             disableOnInteraction: false,
         }}
+        direction='horizontal'
         modules={[Pagination, Autoplay]}
         className={cx('Container_info--slide')}>
             <SwiperSlide className={cx('img_footer-item-1')}>
