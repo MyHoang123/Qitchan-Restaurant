@@ -1,0 +1,161 @@
+.Container_Main_Navbar-icon {
+    width: 41px;
+    height: 41px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #181818;
+    border: 1px solid #EFE7D2;
+    position: relative;
+    cursor: pointer;
+
+    span {
+        top: 50%;
+        width: 20px;
+        height: 1px;
+        background-color: #EFE7D2;
+        margin: 3px;
+        transition: margin .2s linear;
+    }
+}
+
+.Container_Main_Navbar-logo {
+    line-height: 100%;
+}
+
+.Container_Main_Navbar-menu,
+.Container_Main_Navbar-About {
+    font-weight: 300;
+    font-size: 13px;
+    color: #EFE7D2;
+    text-decoration: none;
+}
+
+.Container_Main_Navbar-book {
+    width: 117px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    height: 40px;
+    font-size: 13px;
+    border-radius: 8px;
+    color: #EFE7D2;
+    background-color: #181818;
+    border: 1px solid #EFE7D2;
+}
+
+.Container_Main_Navbar-icon:hover span {
+    margin: 0;
+}
+
+.Container_Main_Navbar {
+    width: 100%;
+    height: 57px;
+    position: absolute;
+    top: 5%;
+    z-index: 1000;
+    padding: 0 3%;
+}
+
+.Container_Navbar {
+    width: 453px;
+    height: 57px;
+    background-color: #0A0B0A;
+    padding: 8px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.Overlay_navbar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #000000;
+    z-index: 10000;
+    padding: 3em;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .5s linear;
+}
+.Overlay_navbar.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+.Navbar_Container-contain {
+    height: 100%;
+    border: 1px solid #EFE7D2;
+    border-radius: 3em;
+    background-color: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.Navbar_container_list {
+    text-align: center;
+    font-size: 5em;
+    font-family: MyCustomFont;
+    color: #efe7d2;
+
+    h1 {
+        font-weight: 100;
+        line-height: 80px;
+        letter-spacing: 2px;
+        cursor: pointer;
+    }
+}
+
+.Navbar_container_list h1:hover {
+    color: #cdbc8f;
+}
+
+.Button_exit-containt {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #EFE7D2;
+    border-radius: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 3%;
+    cursor: pointer;
+    left: 2%;
+    span {
+        display: block;
+        width: 50%;
+        height: 2px;
+        position: absolute;
+        background-color: #EFE7D2;
+        transition: transform .2s linear;
+    }
+    span:nth-child(1) {
+        transform: rotate(45deg);
+    }
+    span:nth-child(2) {
+        transform: rotate(-45deg);
+    }
+}
+.Button_exit-containt:hover {
+    span:nth-child(1) {
+        transform: rotate(0deg);
+    }
+    span:nth-child(2) {
+        transform: rotate(0deg);
+    }
+}
+@media only screen and (max-width: 1299px) {
+    .Container_Main_Navbar {
+        display: flex;
+        justify-content: center;
+    }
+}

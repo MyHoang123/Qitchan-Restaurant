@@ -1,95 +1,74 @@
-import Image from "next/image";
-import styles from "./page.module.css";
-
+import Icon from '../../public/Icon.svg'
+import Image from 'next/image'
+import classNames from 'classnames/bind'
+import style from './page.module.scss'
+import Link from 'next/link'
+const cx = classNames.bind(style)
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>src/app/page.tsx</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
+    <div className={cx('Container')}>
+      <div className={cx('Container__Main')}>
+        <video className={cx('Container_Main-video')} autoPlay muted loop>
+          <source src="/video.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <div className={cx('Container_Main_Description')}>
+          <p>SUSHI</p>
+          <p>SENSATION</p>
         </div>
-      </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      </div>
+      <Link href={'/menu'} className={cx('Container__Menu')}>
+        <div className={cx('Container__Menu_button')}>
+          <div className={cx('Container__Menu_button-left')}></div>
+          <span>MENU</span>
+          <div className={cx('Container__Menu_button-icon')}>
+            <svg className={cx('Container_icon-item1')} width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M13.7625 8.26252L9.2625 12.7625C9.22803 12.797 9.1871 12.8243 9.14206 12.843C9.09702 12.8616 9.04875 12.8712 9 12.8712C8.95125 12.8712 8.90298 12.8616 8.85794 12.843C8.8129 12.8243 8.77197 12.797 8.7375 12.7625C8.70303 12.728 8.67568 12.6871 8.65703 12.6421C8.63837 12.597 8.62877 12.5488 8.62877 12.5C8.62877 12.4513 8.63837 12.403 8.65703 12.358C8.67568 12.3129 8.70303 12.272 8.7375 12.2375L12.5938 8.37502H2.5C2.40054 8.37502 2.30516 8.33551 2.23483 8.26518C2.16451 8.19485 2.125 8.09947 2.125 8.00002C2.125 7.90056 2.16451 7.80518 2.23483 7.73485C2.30516 7.66452 2.40054 7.62502 2.5 7.62502H12.5938L8.7375 3.76252C8.66788 3.6929 8.62877 3.59847 8.62877 3.50002C8.62877 3.40156 8.66788 3.30713 8.7375 3.23752C8.80712 3.1679 8.90154 3.12878 9 3.12878C9.09846 3.12878 9.19288 3.1679 9.2625 3.23752L13.7625 7.73752C13.798 7.77137 13.8264 7.8121 13.8457 7.85722C13.865 7.90234 13.875 7.95092 13.875 8.00002C13.875 8.04911 13.865 8.09769 13.8457 8.14281C13.8264 8.18793 13.798 8.22866 13.7625 8.26252Z" fill="#EFE7D2" />
+            </svg>
+            <svg className={cx('Container_icon-item2')} width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M13.7625 8.26252L9.2625 12.7625C9.22803 12.797 9.1871 12.8243 9.14206 12.843C9.09702 12.8616 9.04875 12.8712 9 12.8712C8.95125 12.8712 8.90298 12.8616 8.85794 12.843C8.8129 12.8243 8.77197 12.797 8.7375 12.7625C8.70303 12.728 8.67568 12.6871 8.65703 12.6421C8.63837 12.597 8.62877 12.5488 8.62877 12.5C8.62877 12.4513 8.63837 12.403 8.65703 12.358C8.67568 12.3129 8.70303 12.272 8.7375 12.2375L12.5938 8.37502H2.5C2.40054 8.37502 2.30516 8.33551 2.23483 8.26518C2.16451 8.19485 2.125 8.09947 2.125 8.00002C2.125 7.90056 2.16451 7.80518 2.23483 7.73485C2.30516 7.66452 2.40054 7.62502 2.5 7.62502H12.5938L8.7375 3.76252C8.66788 3.6929 8.62877 3.59847 8.62877 3.50002C8.62877 3.40156 8.66788 3.30713 8.7375 3.23752C8.80712 3.1679 8.90154 3.12878 9 3.12878C9.09846 3.12878 9.19288 3.1679 9.2625 3.23752L13.7625 7.73752C13.798 7.77137 13.8264 7.8121 13.8457 7.85722C13.865 7.90234 13.875 7.95092 13.875 8.00002C13.875 8.04911 13.865 8.09769 13.8457 8.14281C13.8264 8.18793 13.798 8.22866 13.7625 8.26252Z" fill="#EFE7D2" />
+            </svg>
+          </div>
+          <div className={cx('Container__Menu_button-right')}></div>
+        </div>
+      </Link>
+      <Link href={'/booking'} className={cx('Container__RESERVATION')}>
+        <div className={cx('Container__Menu_button')}>
+          <div className={cx('Container__Menu_button-left')}></div>
+          <span>RESERVATION</span>
+          <div className={cx('Container__Menu_button-icon')}>
+            <svg className={cx('Container_icon-item1')} width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M13.7625 8.26252L9.2625 12.7625C9.22803 12.797 9.1871 12.8243 9.14206 12.843C9.09702 12.8616 9.04875 12.8712 9 12.8712C8.95125 12.8712 8.90298 12.8616 8.85794 12.843C8.8129 12.8243 8.77197 12.797 8.7375 12.7625C8.70303 12.728 8.67568 12.6871 8.65703 12.6421C8.63837 12.597 8.62877 12.5488 8.62877 12.5C8.62877 12.4513 8.63837 12.403 8.65703 12.358C8.67568 12.3129 8.70303 12.272 8.7375 12.2375L12.5938 8.37502H2.5C2.40054 8.37502 2.30516 8.33551 2.23483 8.26518C2.16451 8.19485 2.125 8.09947 2.125 8.00002C2.125 7.90056 2.16451 7.80518 2.23483 7.73485C2.30516 7.66452 2.40054 7.62502 2.5 7.62502H12.5938L8.7375 3.76252C8.66788 3.6929 8.62877 3.59847 8.62877 3.50002C8.62877 3.40156 8.66788 3.30713 8.7375 3.23752C8.80712 3.1679 8.90154 3.12878 9 3.12878C9.09846 3.12878 9.19288 3.1679 9.2625 3.23752L13.7625 7.73752C13.798 7.77137 13.8264 7.8121 13.8457 7.85722C13.865 7.90234 13.875 7.95092 13.875 8.00002C13.875 8.04911 13.865 8.09769 13.8457 8.14281C13.8264 8.18793 13.798 8.22866 13.7625 8.26252Z" fill="#EFE7D2" />
+            </svg>
+            <svg className={cx('Container_icon-item2')} width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M13.7625 8.26252L9.2625 12.7625C9.22803 12.797 9.1871 12.8243 9.14206 12.843C9.09702 12.8616 9.04875 12.8712 9 12.8712C8.95125 12.8712 8.90298 12.8616 8.85794 12.843C8.8129 12.8243 8.77197 12.797 8.7375 12.7625C8.70303 12.728 8.67568 12.6871 8.65703 12.6421C8.63837 12.597 8.62877 12.5488 8.62877 12.5C8.62877 12.4513 8.63837 12.403 8.65703 12.358C8.67568 12.3129 8.70303 12.272 8.7375 12.2375L12.5938 8.37502H2.5C2.40054 8.37502 2.30516 8.33551 2.23483 8.26518C2.16451 8.19485 2.125 8.09947 2.125 8.00002C2.125 7.90056 2.16451 7.80518 2.23483 7.73485C2.30516 7.66452 2.40054 7.62502 2.5 7.62502H12.5938L8.7375 3.76252C8.66788 3.6929 8.62877 3.59847 8.62877 3.50002C8.62877 3.40156 8.66788 3.30713 8.7375 3.23752C8.80712 3.1679 8.90154 3.12878 9 3.12878C9.09846 3.12878 9.19288 3.1679 9.2625 3.23752L13.7625 7.73752C13.798 7.77137 13.8264 7.8121 13.8457 7.85722C13.865 7.90234 13.875 7.95092 13.875 8.00002C13.875 8.04911 13.865 8.09769 13.8457 8.14281C13.8264 8.18793 13.798 8.22866 13.7625 8.26252Z" fill="#EFE7D2" />
+            </svg>
+          </div>
+          <div className={cx('Container__Menu_button-right')}></div>
+        </div>
+      </Link>
+      <Link href={'/about'} className={cx('Container__Ourestaurant')}>
+        <div className={cx('Container__Menu_button')}>
+          <div className={cx('Container__Menu_button-left')}></div>
+          <span>OUR RESTAURANT</span>
+          <div className={cx('Container__Menu_button-icon')}>
+            <svg className={cx('Container_icon-item1')} width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M13.7625 8.26252L9.2625 12.7625C9.22803 12.797 9.1871 12.8243 9.14206 12.843C9.09702 12.8616 9.04875 12.8712 9 12.8712C8.95125 12.8712 8.90298 12.8616 8.85794 12.843C8.8129 12.8243 8.77197 12.797 8.7375 12.7625C8.70303 12.728 8.67568 12.6871 8.65703 12.6421C8.63837 12.597 8.62877 12.5488 8.62877 12.5C8.62877 12.4513 8.63837 12.403 8.65703 12.358C8.67568 12.3129 8.70303 12.272 8.7375 12.2375L12.5938 8.37502H2.5C2.40054 8.37502 2.30516 8.33551 2.23483 8.26518C2.16451 8.19485 2.125 8.09947 2.125 8.00002C2.125 7.90056 2.16451 7.80518 2.23483 7.73485C2.30516 7.66452 2.40054 7.62502 2.5 7.62502H12.5938L8.7375 3.76252C8.66788 3.6929 8.62877 3.59847 8.62877 3.50002C8.62877 3.40156 8.66788 3.30713 8.7375 3.23752C8.80712 3.1679 8.90154 3.12878 9 3.12878C9.09846 3.12878 9.19288 3.1679 9.2625 3.23752L13.7625 7.73752C13.798 7.77137 13.8264 7.8121 13.8457 7.85722C13.865 7.90234 13.875 7.95092 13.875 8.00002C13.875 8.04911 13.865 8.09769 13.8457 8.14281C13.8264 8.18793 13.798 8.22866 13.7625 8.26252Z" fill="#EFE7D2" />
+            </svg>
+            <svg className={cx('Container_icon-item2')} width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M13.7625 8.26252L9.2625 12.7625C9.22803 12.797 9.1871 12.8243 9.14206 12.843C9.09702 12.8616 9.04875 12.8712 9 12.8712C8.95125 12.8712 8.90298 12.8616 8.85794 12.843C8.8129 12.8243 8.77197 12.797 8.7375 12.7625C8.70303 12.728 8.67568 12.6871 8.65703 12.6421C8.63837 12.597 8.62877 12.5488 8.62877 12.5C8.62877 12.4513 8.63837 12.403 8.65703 12.358C8.67568 12.3129 8.70303 12.272 8.7375 12.2375L12.5938 8.37502H2.5C2.40054 8.37502 2.30516 8.33551 2.23483 8.26518C2.16451 8.19485 2.125 8.09947 2.125 8.00002C2.125 7.90056 2.16451 7.80518 2.23483 7.73485C2.30516 7.66452 2.40054 7.62502 2.5 7.62502H12.5938L8.7375 3.76252C8.66788 3.6929 8.62877 3.59847 8.62877 3.50002C8.62877 3.40156 8.66788 3.30713 8.7375 3.23752C8.80712 3.1679 8.90154 3.12878 9 3.12878C9.09846 3.12878 9.19288 3.1679 9.2625 3.23752L13.7625 7.73752C13.798 7.77137 13.8264 7.8121 13.8457 7.85722C13.865 7.90234 13.875 7.95092 13.875 8.00002C13.875 8.04911 13.865 8.09769 13.8457 8.14281C13.8264 8.18793 13.798 8.22866 13.7625 8.26252Z" fill="#EFE7D2" />
+            </svg>
+          </div>
+          <div className={cx('Container__Menu_button-right')}></div>
+        </div>
+      </Link>
+      <div className={cx('Container_footer')}>
+        <Image alt='Img not author' src={Icon} />
+        <p>© GOLA TEMPLATES</p>
+        <p>LICENSING</p>
+        <p>STYLEGUIDE</p>
+        <Image alt='Img not author' src={Icon} />
+      </div>
     </div>
   );
 }
