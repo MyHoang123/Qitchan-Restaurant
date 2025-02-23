@@ -7,8 +7,6 @@ function MenuPPage() {
     return (
         <div className={cx('Container')}>
             <div className={cx('Container_img_contain')}>
-                {/* <Image alt='Img not author' src={MenuImg} />
-                     */}
                 <div className={cx('Container_img-title')}>
                     <span className={cx('Container_img_title')}>BOOK</span>
                     <span className={cx('Container_img_title')}>A TABLE</span>
