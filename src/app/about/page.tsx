@@ -72,7 +72,7 @@ function AboutPage() {
                                 <rect x="51.2071" y="13" width="7" height="7" transform="rotate(-45 51.2071 13)" stroke="#EFE7D2" strokeOpacity="0.15" />
                             </svg>
                         </div>
-                        <p>Founded with a passion for culinary excellence, Qitchen's journey began in the heart of Prague. Over years, it evolved into a haven for sushi enthusiasts, celebrated for its artful mastery and devotion to redefining gastronomy.</p>
+                        <p>Founded with a passion for culinary excellence, Qitchens journey began in the heart of Prague. Over years, it evolved into a haven for sushi enthusiasts, celebrated for its artful mastery and devotion to redefining gastronomy.</p>
                     </div>
                 </div>
                 <div className={cx('Container_info-bonus')}>
@@ -81,7 +81,6 @@ function AboutPage() {
                     <p>Styleguide</p>
                 </div>
             </div>
-            {/* <div className={cx('over_lay')}></div> */}
         </div>
     );
 }
