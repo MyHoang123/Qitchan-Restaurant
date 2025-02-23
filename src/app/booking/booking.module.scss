@@ -72,7 +72,7 @@
 .Container_book {
     border: 1px solid #EFE7D2;
     height: 90%;
-    padding: 70px 0;
+    padding: 70px 26px;
     border-radius: 16px;
     display: flex;
     flex-direction: column;
@@ -105,7 +105,6 @@
 
 .container_book-form {
     margin-top: 80px;
-    width: 600px;
     height: 356px;
     display: flex;
     flex-direction: column;
@@ -173,21 +172,39 @@
         width: 100%;
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 100vh 100vh;
+        grid-template-rows: 55vh 100vh;
         row-gap: 3em;
     }
     .Container_img-title {
         align-items: center;
         padding-left: 0;
     }
-    .container_book-form {
-        width: 400px;
-    }
     .container_book-containt {
         padding: 0 0;
     }
     
 .Container_book-footer {
-    padding: 0 20%;
+    padding: 0 15%;
+}
+.container_book-form {
+    padding: 0 16px;
+}
+.container_book-form {
+    input {
+        padding: 10px 10px;
+    }
+}
+.Container_book {
+    height: 90%;
+    padding: 70px 10px;
+}
+.container_book-containt {
+    h1 {
+        font-size: 3.5em;
+    }
+
+    h4 {
+        padding: 0 20px;
+    }
 }
 }

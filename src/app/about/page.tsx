@@ -1,5 +1,7 @@
 
 "use client";
+import Icon from '../../../public/Icon.svg'
+import Image from 'next/image'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
 import SlideHeader from './slideHeader'
@@ -78,7 +80,9 @@ function AboutPage() {
                 </div>
                 <div className={cx('Container_info-bonus')}>
                     <p>© Gola Templates</p>
+                    <Image src={Icon} alt='Image not default'/>
                     <p>Licensing</p>
+                    <Image src={Icon} alt='Image not default'/>
                     <p>Styleguide</p>
                 </div>
             </div>

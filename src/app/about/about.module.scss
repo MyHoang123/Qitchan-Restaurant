@@ -127,11 +127,10 @@
     border-radius: 16px;
     display: flex;
     justify-content: center;
-    gap: 1vw;
+    gap: 1em;
     align-items: center;
-
     p {
-        font-size: .8vw;
+        font-size: 2em;
         color: #EFE7D2;
         line-height: 0;
     }
@@ -253,11 +252,12 @@
     }
 
     .Container_main {
-        height: 100vh;
+        height: 56vh;
     }
 
-    .Container_info {}
-
+    .Container_info-bonus {
+        padding: 40px 40px;
+    }
     .Container_main-title {
         text-align: center;
         padding-left: 0;
