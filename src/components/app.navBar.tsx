@@ -57,7 +57,7 @@ function Navbar() {
                         <h1 onClick={() => handleClickNextPage('menu')}>MENU</h1>
                         <h1 onClick={() => handleClickNextPage('booking')}>RESERVATION</h1>
                         <h1 onClick={() => handleClickNextPage('about')}>ABOUT</h1>
-                        <h1>CONTACT</h1>
+                        <h1 onClick={() => handleClickNextPage('contact')}>CONTACT</h1>
                         <h1>BLOG</h1>
                         <Image src={IconNavbar} alt="Img not default" />
                     </div>
