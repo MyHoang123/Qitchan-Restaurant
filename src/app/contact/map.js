@@ -4,11 +4,12 @@ import mapboxgl from 'mapbox-gl';
 import 'mapbox-gl/dist/mapbox-gl.css';
 
 const MapboxExample = () => {
-  const mapContainerRef = useRef('null');
-  const mapRef = useRef<string>('');
+  const mapContainerRef = useRef();
+  const mapRef = useRef();
 
   useEffect(() => {
     mapboxgl.accessToken = 'pk.eyJ1IjoibXlob2FuZzEyMyIsImEiOiJjbTFlZzF2d2cydWR0MmtvajFwYnB5OW42In0.-CeNZom6cnNBEsAWVumPuQ';
+
     mapRef.current = new mapboxgl.Map({
       container: mapContainerRef.current,
       center: [-0.126326, 51.533582],
@@ -101,7 +102,7 @@ const MapboxExample = () => {
     });
   }, []);
 
-  return <div id="map" style={{ height: '100%', width:'100%', borderRadius: '2em' }} ref={mapContainerRef} />;
+  return <div id="map" style={{ height: '100%', borderRadius: '2em' }} ref={mapContainerRef} />;
 };
 
 export default MapboxExample;
